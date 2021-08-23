@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="FB1.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "2. My Father (FATHER)",
+   "3. My Mother (MOTHER)",
+   "4. My Sister (SISTER)",
+   "5. Me (ME)"
+   ];
+ var images=[
+   "https://previews.123rf.com/images/jemastock/jemastock1806/jemastock180602468/102904024-cute-father-cartoon-vector-illustration-graphic-design.jpg",
+   "https://previews.123rf.com/images/jemastock/jemastock1806/jemastock180602353/102903917-cute-mother-cartoon-vector-illustration-graphic-design.jpg",
+   "https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190505227/122760736-little-girl-avatar-character-vector-illustration-design.jpg?ver=6",
+   "https://img.freepik.com/free-vector/cute-boy-standing-position-showing-thumb_96037-450.jpg?size=626&ext=jpg"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
